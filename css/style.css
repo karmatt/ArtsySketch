@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: "Open Sans", "Roboto", sans-serif;
+  font-size: 18px;
+}
+body {
+  background-color: wheat;
+}
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+label {
+  display: block;
+  font-size: 1.2rem;
+}
+a {
+  display: inline;
+  text-decoration: none;
+}
+button {
+  font-size: 1rem;
+}
+footer {
+  display: inline;
+}
