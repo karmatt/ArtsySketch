@@ -22,34 +22,42 @@
     <header class="header">
       <h1 class="header__title">Sketch</h1>
     </header>
-    <main>
+    <main class="container">
       <div class="settings">
-        <input
-          type="color"
-          name="color-picker"
-          id="color-picker"
-          value="#0f0f0f"
-          class="settings__color-picker"
-        />
-        <div class="settings__grid-slider">
-          <label for="grid-size" class="grid-slider__label">16 x 16</label>
+        <div class="settings__row">
           <input
-            type="range"
-            name="grid-size"
-            id="grid-size"
-            min="1"
-            max="64"
-            value="16"
-            class="grid-slider__input"
+            type="color"
+            name="color-picker"
+            id="color-picker"
+            value="#0f0f0f"
+            class="settings__color-picker"
           />
+          <div class="settings__grid-slider">
+            <label for="grid-size" class="grid-slider__label">16 x 16</label>
+            <input
+              type="range"
+              name="grid-size"
+              id="grid-size"
+              min="1"
+              max="64"
+              value="16"
+              class="grid-slider__input"
+            />
+          </div>
         </div>
-        <div class="settings__modes">
-          <button class="btn btn--mode btn--active settings__color-mode">
-            Color
-          </button>
-          <button class="btn btn--mode settings__rainbow-mode">Rainbow</button>
-          <button class="btn btn--mode settings__eraser-mode">Eraser</button>
-          <button class="btn settings__clear">Clear</button>
+        <div class="settings__row">
+          <div class="settings__column">
+            <button class="btn btn--mode btn--active settings__color-mode">
+              Color
+            </button>
+            <button class="btn btn--mode settings__rainbow-mode">
+              Rainbow
+            </button>
+          </div>
+          <div class="settings__column">
+            <button class="btn btn--mode settings__eraser-mode">Eraser</button>
+            <button class="btn settings__clear">Clear</button>
+          </div>
         </div>
       </div>
       <div class="grid-area"></div>
@@ -60,7 +68,7 @@
         href="https://github.com/karmatt/ArtsySketch"
         target="_blank"
         class="footer__github"
-        ><span class="fab fa-github"></span
+        ><span class="fab fa-github big"></span
       ></a>
     </footer>
   </body>
