@@ -4,9 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/41881099c8.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/app.js" defer></script>
     <title>Odin | Sketch</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Sketch</h1>
+    </header>
+    <main class="container">
+      <div class="settings">
+        <div class="settings__row">
+          <input
+            type="color"
+            name="color-picker"
+            id="color-picker"
+            value="#0f0f0f"
+            class="settings__color-picker"
+          />
+          <div class="settings__grid-slider">
+            <label for="grid-size" class="grid-slider__label">16 x 16</label>
+            <input
+              type="range"
+              name="grid-size"
+              id="grid-size"
+              min="1"
+              max="64"
+              value="16"
+              class="grid-slider__input"
+            />
+          </div>
+        </div>
+        <div class="settings__row">
+          <div class="settings__column">
+            <button class="btn btn--mode btn--active settings__color-mode">
+              Color
+            </button>
+            <button class="btn btn--mode settings__rainbow-mode">
+              Rainbow
+            </button>
+          </div>
+          <div class="settings__column">
+            <button class="btn btn--mode settings__eraser-mode">Eraser</button>
+            <button class="btn settings__clear">Clear</button>
+          </div>
+        </div>
+      </div>
+      <div class="grid-area"></div>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2022 Ironwell Designs</p>
+      <a
+        href="https://github.com/karmatt/ArtsySketch"
+        target="_blank"
+        class="footer__github"
+        ><span class="fab fa-github big"></span
+      ></a>
+    </footer>
+  </body>
 </html>

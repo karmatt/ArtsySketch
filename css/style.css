@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #141414;
+  --secondary-color: #fff8f7;
+}
+html,
+body {
+  font-family: "Open Sans", "Roboto", sans-serif;
+  font-size: 18px;
+  position: relative;
+}
+body {
+  background-color: wheat;
+}
+h1 {
+  font-size: 3rem;
+  padding: 10px 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+label {
+  display: block;
+  font-size: 0.8rem;
+}
+a {
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+}
+button {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  margin: 10px 0;
+  padding: 8px 16px;
+  width: 100%;
+}
+footer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.container {
+  margin: 20px auto;
+  max-width: 250px;
+  padding: 10px;
+  width: 100%;
+}
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.settings__row {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+.settings__color-picker {
+  border-radius: 5px;
+  height: 50px;
+  width: 50px;
+}
+.settings__column {
+  width: 50%;
+}
+.grid-area {
+  aspect-ratio: 1;
+  background-color: var(--secondary-color);
+  box-shadow: 10px 10px 12px -3px rgba(140, 140, 140, 0.79);
+  -webkit-box-shadow: 10px 10px 12px -3px rgba(140, 140, 140, 0.79);
+  -moz-box-shadow: 10px 10px 12px -3px rgba(140, 140, 140, 0.79);
+  display: grid;
+}
+.fa-github {
+  font-size: 1.3rem;
+}
