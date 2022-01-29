@@ -6,7 +6,7 @@
   padding: 0;
 }
 :root {
-  --primary-color: #141414;
+  --primary-color: #1f1d1d;
   --secondary-color: #fff8f7;
 }
 html,
@@ -37,6 +37,7 @@ button {
   background-color: var(--secondary-color);
   border: 1px solid var(--primary-color);
   border-radius: 8px;
+  cursor: pointer;
   display: block;
   font-size: 0.7rem;
   letter-spacing: 1px;
@@ -69,11 +70,19 @@ footer {
 }
 .settings__color-picker {
   border-radius: 5px;
+  cursor: pointer;
   height: 50px;
   width: 50px;
 }
+.grid-slider__input {
+  cursor: pointer;
+}
 .settings__column {
   width: 50%;
+}
+.btn--active {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 .grid-area {
   aspect-ratio: 1;
@@ -85,4 +94,15 @@ footer {
 }
 .fa-github {
   font-size: 1.3rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  .grid-area > div:hover {
+    background-color: steelblue;
+    z-index: 1000;
+  }
 }
