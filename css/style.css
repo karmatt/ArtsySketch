@@ -102,7 +102,6 @@ footer {
     color: var(--secondary-color);
   }
   .grid-area > div:hover {
-    background-color: steelblue;
-    z-index: 1000;
+    background-color: steelblue !important;
   }
 }
